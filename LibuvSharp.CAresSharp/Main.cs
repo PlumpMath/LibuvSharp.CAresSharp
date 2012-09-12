@@ -7,6 +7,20 @@ namespace LibuvSharp.CAresSharp
 {
 	public static class LoopExtensions
 	{
+		static Dictionary<Loop, CAresChannel> channels = new Dictionary<Loop, CAresChannel>();
+		
+		public static CAresChannel DefaultCAresChannel(this Loop loop)
+		{
+			CAresChannel channel;
+			if (channels.TryGetValue(loop, out channel)) {
+				return channel;	
+			} else {
+				channel = loop.CAresChannel();
+				channels[loop] = channel;
+				return channel;
+			}
+		}
+		
 		public static CAresChannel CAresChannel(this Loop loop)
 		{
 			Dictionary<int, Poll> dict = new Dictionary<int, Poll>();

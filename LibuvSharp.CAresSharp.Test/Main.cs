@@ -10,7 +10,7 @@ namespace LibuvSharp.CAresSharp.Test
 		{
 			CAres.Init();
 			
-			var cares = Loop.Default.CAresChannel();
+			var cares = Loop.Default.DefaultCAresChannel();
 			
 			string host = "www.google.de";
 			if (args.Length > 0) {
