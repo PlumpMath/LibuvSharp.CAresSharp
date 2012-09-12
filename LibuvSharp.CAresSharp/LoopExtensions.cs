@@ -13,7 +13,7 @@ namespace LibuvSharp.CAresSharp
 		{
 			CAresChannel channel;
 			if (channels.TryGetValue(loop, out channel)) {
-				return channel;	
+				return channel;
 			} else {
 				channel = loop.CAresChannel();
 				channels[loop] = channel;
