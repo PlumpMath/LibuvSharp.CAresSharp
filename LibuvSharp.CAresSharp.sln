@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibuvSharp.CAresSharp", "LibuvSharp.CAresSharp\LibuvSharp.CAresSharp.csproj", "{30EAA937-C385-4428-A260-70F46F9FDF74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibuvSharp.CAresSharp.Test", "LibuvSharp.CAresSharp.Test\LibuvSharp.CAresSharp.Test.csproj", "{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30EAA937-C385-4428-A260-70F46F9FDF74}.Debug|x86.ActiveCfg = Debug|x86
+		{30EAA937-C385-4428-A260-70F46F9FDF74}.Debug|x86.Build.0 = Debug|x86
+		{30EAA937-C385-4428-A260-70F46F9FDF74}.Release|x86.ActiveCfg = Release|x86
+		{30EAA937-C385-4428-A260-70F46F9FDF74}.Release|x86.Build.0 = Release|x86
+		{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}.Debug|x86.ActiveCfg = Debug|x86
+		{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}.Debug|x86.Build.0 = Debug|x86
+		{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}.Release|x86.ActiveCfg = Release|x86
+		{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = LibuvSharp.CAresSharp.Test\LibuvSharp.CAresSharp.Test.csproj
+	EndGlobalSection
+EndGlobal
