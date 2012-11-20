@@ -29,9 +29,8 @@ namespace LibuvSharp.CAresSharp
 				SocketCallback = (channel, socket, read, write) => {
 					if (read | write) {
 						var poll = new Poll(loop, socket);
-						poll.Start(PollEvent.Read, (@event) => {
-							channel.Process(socket, -1);
-						});
+						poll.Event += (@event) => channel.Process(socket, -1);
+						poll.Start(PollEvent.Read);
 						dict[socket] = poll;
 					} else {
 						var poll = dict[socket];

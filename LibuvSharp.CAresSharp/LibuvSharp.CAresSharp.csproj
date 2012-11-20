@@ -9,7 +9,6 @@
     <OutputType>Library</OutputType>
     <RootNamespace>LibuvSharp.CAresSharp</RootNamespace>
     <AssemblyName>LibuvSharp.CAresSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,15 +32,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="LibuvSharp, Version=1.0.4638.39724, Culture=neutral, PublicKeyToken=null">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="LibuvSharp">
       <HintPath>..\LibuvSharp.dll</HintPath>
     </Reference>
-    <Reference Include="CAresSharp, Version=1.0.4638.37632, Culture=neutral, PublicKeyToken=null">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CAresSharp">
       <HintPath>..\CAresSharp.dll</HintPath>
     </Reference>
-    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />

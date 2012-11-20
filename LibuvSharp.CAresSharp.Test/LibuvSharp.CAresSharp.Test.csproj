@@ -1,1 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  <PropertyGroup>    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>    <ProductVersion>10.0.0</ProductVersion>    <SchemaVersion>2.0</SchemaVersion>    <ProjectGuid>{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}</ProjectGuid>    <OutputType>Exe</OutputType>    <RootNamespace>LibuvSharp.CAresSharp.Test</RootNamespace>    <AssemblyName>LibuvSharp.CAresSharp.Test</AssemblyName>    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  </PropertyGroup>  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">    <DebugSymbols>true</DebugSymbols>    <DebugType>full</DebugType>    <Optimize>false</Optimize>    <OutputPath>..\bin\Debug</OutputPath>    <DefineConstants>DEBUG</DefineConstants>    <ErrorReport>prompt</ErrorReport>    <WarningLevel>4</WarningLevel>    <PlatformTarget>x86</PlatformTarget>    <Externalconsole>true</Externalconsole>  </PropertyGroup>  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">    <DebugType>none</DebugType>    <Optimize>false</Optimize>    <OutputPath>..\bin\Release</OutputPath>    <ErrorReport>prompt</ErrorReport>    <WarningLevel>4</WarningLevel>    <PlatformTarget>x86</PlatformTarget>    <Externalconsole>true</Externalconsole>  </PropertyGroup>  <ItemGroup>    <Compile Include="Main.cs" />    <Compile Include="AssemblyInfo.cs" />  </ItemGroup>  <ItemGroup>    <Reference Include="System" />    <Reference Include="CAresSharp, Version=1.0.4638.37632, Culture=neutral, PublicKeyToken=null">      <SpecificVersion>False</SpecificVersion>      <HintPath>..\CAresSharp.dll</HintPath>    </Reference>    <Reference Include="LibuvSharp, Version=1.0.4638.39724, Culture=neutral, PublicKeyToken=null">      <SpecificVersion>False</SpecificVersion>      <HintPath>..\LibuvSharp.dll</HintPath>    </Reference>  </ItemGroup>  <ItemGroup>    <ProjectReference Include="..\LibuvSharp.CAresSharp\LibuvSharp.CAresSharp.csproj">      <Project>{30EAA937-C385-4428-A260-70F46F9FDF74}</Project>      <Name>LibuvSharp.CAresSharp</Name>    </ProjectReference>  </ItemGroup>  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /></Project>
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB4F3D93-B300-4BD4-AD17-76E2BE44D46E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LibuvSharp.CAresSharp.Test</RootNamespace>
+    <AssemblyName>LibuvSharp.CAresSharp.Test</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="CAresSharp">
+      <HintPath>..\CAresSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibuvSharp">
+      <HintPath>..\LibuvSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibuvSharp.CAresSharp\LibuvSharp.CAresSharp.csproj">
+      <Project>{30EAA937-C385-4428-A260-70F46F9FDF74}</Project>
+      <Name>LibuvSharp.CAresSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
